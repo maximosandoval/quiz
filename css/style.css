@@ -1,0 +1,140 @@
+/*css reset */
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+code,
+small,
+strike,
+strong,
+b,
+u,
+i {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+  padding-top: 2rem;
+}
+body {
+  line-height: 1.75em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+
+.maincontainer {
+  max-width: 800px;
+  width: 100%;
+  border: 1px solid rgb(128, 126, 126);
+  background: #eee;
+  padding: 10px;
+}
+
+.timer {
+  font-size: inherit;
+}
+
+.container {
+}
+
+.button-id {
+}
+.questioncontainer {
+}
+
+.question {
+}
+
+.answerform {
+}
+
+.checkbox {
+  border: 3px black;
+}
+
+.submitbtn {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+}
+ol,
+ul {
+  list-style-position: outside;
+}
+
+.header {
+  font-size: 2.5rem;
+  margin: 0 10px 10px;
+  font-weight: 700;
+}
+#content {
+  font-size: 1.5em;
+  margin: 0 40px 10px;
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  background: #ccc;
+  padding: 0 15px;
+  width: auto;
+}
+h2 {
+  font: italic bold 1.3em/1.2em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 5px 15px 15px;
+}
+input[type="radio"] {
+  margin: 0 10px 5px -22px;
+}
+label {
+  margin: 0 0 5px;
+}
+#score p {
+  font-size: 0.95em;
+  font-style: italic;
+  color: #666;
+  float: right;
+  margin: 5px 5px 0 0;
+}
+#score:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#response {
+  min-height: 70px;
+  margin: 10px;
+}
+#response h3 {
+  font: normal bold 1.2em/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 5px 0;
+}
