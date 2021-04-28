@@ -1,17 +1,25 @@
 //VAR DECLARATIONS
 var timeElement = document.querySelector.Selector(".timer");
-carousel = document.querySelector(".carouselbox");
+var answer1 = document.getElementById("answer1");
+var answer2 = document.getElementById("answer2");
+var answer3 = document.getElementById("answer3");
+var answer4 = document.getElementById("answer4");
 var next = carousel.querySelector(".next");
 var prev = carousel.querySelector(".prev");
+var answerEl = document.getElementsByClassName("answer");
+var finalscore = document.getElementById("end");
+var answerfinal = "";
+var q = 0;
 var score = 0;
 var time = 120
 var index = 0;
-var currentImage;
 
-//Start quiz (button)
-document.querySelector(#start-btn).addEventListener
-("click", function () {
+var rightAnswer=document.getElementById("rightanswer");
+//console.log(startButton);
 
+//Start quiz ("Let's Get Schwifty button)
+document.querySelector("#start-btn").addEventListener
+("click", function() {
 //start timer
 timer = setInterval(function () {
     time--;
@@ -22,14 +30,14 @@ document.querySelector(".time").textContent = time;
 if (time <= 0) {
     clearInterval(timer);
     endgame();
+    }
 }, 1000)
 }
 
 
-
 //Quiz Questions
 //Capture the end user click and compare their answer to the right answer
-
+rightAnswer.addEventListener("click", function() {})
 
 
 //NAVIGATION (SEE LESSON 17)
@@ -38,7 +46,7 @@ INDEX = INDEX + DIRECTION;
 
 //Set up array of question objects
 
-//TIMER PRESENTATION
+
 
 
 //SUBMIT ANSWER CORRECTLY

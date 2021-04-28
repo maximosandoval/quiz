@@ -1,36 +1,64 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Max Sandoval Quiz</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/style.css">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Start Index Screen of Quiz-->
-<main>
-<header class="maincontainer">
-<hl class="header"> How Well Do You Know Rick And Morty?</hl><br />
-<h2>Can you even call yourself a Rick and Morty fan if you don't ace this?
-</h2>
-<div class="timer">Place timer here</div>
+    <main>
+      <header class="headercontainer" id="scorecard">
+        <h2>How Well Do You Know Rick And Morty?</h2>
+        <h3 id="previousScore">Total Score:</h3>
 
-<!-- End Index Screen --> 
+        <h3>Timer:<span id="timer"></span></h3>
+      </header>
 
-<!--Begin questions container -->
-<section class="container" id="main">
-  <!-- Start Quiz Button -->
-<button id="start-btn">Let's Get Schwifty</button>
-</header></main>
-<!-- Start questions -->
-<div class="questioncontainer">
+      <!--Begin quiz questions container -->
+      <main class="main">
+        <p>You have 60 seconds to answer 5 questions.</p>
 
-  <!-- Question #1-->
-  <h2 class="question">What does Rick use to travel between dimensions and universes?</h2>
+        <!-- Start Quiz -->
+        <button id="startButton">Let's Get Schwifty</button>
+      </main>
+
+      <!-- Start Question Holder -->
+
+      <section class="stage" id="qStage">
+        <h2 id="trackScore"></h2>
+        <h3 id="question1">Question 1</h3>
+        <button id="answer1" class="answer" value="1"></button>
+        <button id="answer2" class="answer" value="2"></button>
+        <button id="answer3" class="answer" value="3"></button>
+        <button id="answer4" class="answer" value="4"></button>
+      </section>
+      <section id="highScore" class="finalScore">
+        <h3 id="final-score"></h3>
+        <p>High Scores</p>
+        <form action="./script/script.js"></form>
+        <label for="initials">Enter Your Initials</label>
+        <input type="text" id="playersinitials" name="playersinitials" />
+      </section>
+      <button id="submit">Submit</button>
+      <script src="./script/script.js"></script>
+    </main>
+  </body>
+</html>
+
+<!-- Question #1
+  <div
+ <h2 class="question">What does Rick use to travel between dimensions and universes?</h2>
   <form class="answerform" id="answer" action="./">
-    <div>
+   
 <input type="checkbox" name="answer" value="0"/>
 <label id="option1" for="1">1. Space Laser</label>
 
@@ -41,38 +69,35 @@
 <label id="option1" for="3">3. Space Array</label>
 
 <input type="checkbox" name="answer" value="0"/>
-<label id="option1" for="4">4. Portal Laser</label>
+<label id="option1" for="4">4. Portal Laser</label>-->
 
-<!-- Submit Button-->
+<!-- Submit Button
 <button class="submitbtn">Submit Answer</button>
-<!--End Submit button-->
+End Submit button-->
 
-    </form>
-    </div>
-   
-     <!-- Question #2-->
+<!-- Question #2
   <h2 class="question">Who is Morty based on?</h2>
   <form class="answerform" id="answer" action="./">
-    <div>
+    
 <input type="checkbox" name="answer" value="0"/>
-<label id="option1" for="1">1. Space Laser</label>
+<label id="option1" for="1">1. Famous Comedian</label>
 
 <input type="checkbox" name="answer" value="0"/>
-<label id="option1" for="2">2. Portal Gun</label>
+<label id="option1" for="2">2. Marty McFly</label>
 
 <input type="checkbox" name="answer" value="0"/>
-<label id="option1" for="3">3. Space Array</label>
+<label id="option1" for="3">3. Dan Harmon's Brother</label>
 
 <input type="checkbox" name="answer" value="0"/>
-<label id="option1" for="4">4. Portal Laser</label>
+<label id="option1" for="4">4. Show Producer</label>-->
 
-<!-- Submit Button-->
+<!-- Submit Button
 <button class="submitbtn">Submit Answer</button>
-<!--End Submit button-->
+End Submit button
     </form>
     </div>
-
-     <!-- Question #3-->
+-->
+<!-- Question #3
   <h2 class="question">Who are Rick's two best friends?</h2>
   <form class="answerform" id="answer" action="./">
     <div>
@@ -88,13 +113,13 @@
 <input type="checkbox" name="answer" value="0"/>
 <label id="option1" for="4">4. Pen Sylvester and Mr. Poopy Butthole</label>
 
-<!-- Submit Button-->
+Submit Button
 <button class="submitbtn">Submit Answer</button>
-<!--End Submit button-->
+End Submit button
     </form>
-    </div>
+    </div>-->
 
-     <!-- Question #4-->
+<!-- Question #4
   <h2 class="question">What are the "Ball Fondlers"?</h2>
   <form class="answerform" id="answer" action="./">
     <div>
@@ -109,17 +134,16 @@
 
 <input type="checkbox" name="answer" value="0"/>
 <label id="option1" for="4">4. Mortal Enemies</label>
-<!-- Submit Button-->
+Submit Button
 <button class="submitbtn">Submit Answer</button>
-<!--End Submit button-->
+End Submit button
     </form>
-    </div>
+    </div>-->
 
-
- <!-- Question #5-->
+<!-- Question #5
  <h2 class="question">What is the name of the park that Rick builds inside an Australian homeless man?</h2>
  <form class="answerform" id="answer" action="./">
-   <div>
+
 <input type="checkbox" name="answer" value="0"/>
 <label id="option1" for="1">1. Space Park</label>
 
@@ -131,30 +155,28 @@
 
 <input type="checkbox" name="answer" value="0"/>
 <label id="option1" for="4">4. Hopeless Park</label>
-<!-- Submit Button-->
+ Submit Button
 <button class="submitbtn">Submit Answer</button>
-<!--End Submit button-->
+End Submit button
    </form>
-   </div>
+   </div>-->
 
-   <!-- Final Score Section-->
+<!-- Final Score Section
    <section id="final-score" class="finalscore">
     <h2 class="question">FINAL SCORE</h2><p> You have been added to the best score list!</p><form action="./script/script.js"></form>
     <label for="initials">Type Your (burp!) Initials</label>
     <input type="text" id="initials" name="initials"><br />
 
 
-    <!-- Add how many you got right - wrong -->
+    Add how many you got right - wrong -->
 
-    <!--Highscore Section-->
+<!--Highscore Section-->
 
-<!-- Submit Button-->
+<!-- Submit Button
 <button class="submitbtn">Submit Answer</button>
-<!--End Submit button-->
+End Submit button-->
 
-   </section>
+<!-- </section>
 <script src="./script/script.js"></script>
 </body>
-</html>
-
-
+</html>-->
